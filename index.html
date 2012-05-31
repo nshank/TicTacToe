@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <title>Tic Tac Toe - Nick Shank</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/modernizr-2.5.3.js"></script>
+  </head>
+  <body>
+    <header>
+      <div id="header-wrapper">
+        <h1><a href="#"><img src="images/logo.png" alt="Tic Tac Toe" /></a></h1>
+        <em><a href="#">My Account</a> <span>|</span> <a href="#">Sign Out</a></em>
+      </div>
+    </header>
+    <section id="settings">
+      <div id="settings-wrapper">
+      <div id="player-select">
+      <h2>Player(s)</h2>
+      <ul>
+        <li><a href="#">1 Player</a></li>
+        <li><a href="#">2 Players</a></li>
+      </ul>
+    </div> <!-- /END #player-select -->
+    <div id="difficulty-select">
+      <h2>Difficulty</h2>
+      <ul>
+        <li><a href="#">Easy</a></li>
+        <li><a href="#">Medium</a></li>
+        <li><a href="#">Unbeatable</a></li>
+      </ul>
+    </div><!-- /END #difficulty-select -->
+    </div> <!-- /END #settings-wrapper -->
+    </section>
+    <div id="page">
+    <section id="game-mode">
+      <ul>
+        <li><a href="#">Play</a></li>
+        <!-- <li><a href="#">Play Again</a></li>
+        <li><a href="#">New Game</a></li> -->
+      </ul>
+    </section>
+    <section id="board" class="clearfix">
+        <div id="top-left" class="square">X</div>
+        <div id="top-middle" class="square"></div>
+        <div id="top-right" class="square">O</div>
+
+        <div id="middle-left" class="square"></div>
+        <div id="middle-middle" class="square">X</div>
+        <div id="middle-right" class="square">X</div>
+
+        <div id="bottom-left" class="square"></div>
+        <div id="bottom-middle" class="square"></div>
+        <div id="bottom-right" class="square">O</div>
+    </section> <!-- /END #board -->
+    <section id="history">
+      <h2>Move History</h2>
+      <section id="board-small" class="clearfix">
+        <div id="top-left-small" class="square-small"></div>
+        <div id="top-middle-small" class="square-small"></div>
+        <div id="top-right-small" class="square-small"></div>
+
+        <div id="middle-left-small" class="square-small"></div>
+        <div id="middle-middle-small" class="square-small last-move">X</div>
+        <div id="middle-right-small" class="square-small"></div>
+
+        <div id="bottom-left-small" class="square-small"></div>
+        <div id="bottom-middle-small" class="square-small"></div>
+        <div id="bottom-right-small" class="square-small"></div>
+    </section> <!-- /END #small-board-1 -->
+    <section id="board-small" class="clearfix">
+        <div id="top-left-small" class="square-small"></div>
+        <div id="top-middle-small" class="square-small"></div>
+        <div id="top-right-small" class="square-small last-move">O</div>
+
+        <div id="middle-left-small" class="square-small"></div>
+        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-right-small" class="square-small"></div>
+
+        <div id="bottom-left-small" class="square-small"></div>
+        <div id="bottom-middle-small" class="square-small"></div>
+        <div id="bottom-right-small" class="square-small"></div>
+    </section> <!-- /END #small-board-2 -->
+    <section id="board-small" class="clearfix">
+        <div id="top-left-small" class="square-small last-move">X</div>
+        <div id="top-middle-small" class="square-small"></div>
+        <div id="top-right-small" class="square-small">O</div>
+
+        <div id="middle-left-small" class="square-small"></div>
+        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-right-small" class="square-small"></div>
+
+        <div id="bottom-left-small" class="square-small"></div>
+        <div id="bottom-middle-small" class="square-small"></div>
+        <div id="bottom-right-small" class="square-small"></div>
+    </section> <!-- /END #small-board-3 -->
+    <section id="board-small" class="clearfix">
+        <div id="top-left-small" class="square-small">X</div>
+        <div id="top-middle-small" class="square-small"></div>
+        <div id="top-right-small" class="square-small">O</div>
+
+        <div id="middle-left-small" class="square-small"></div>
+        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-right-small" class="square-small"></div>
+
+        <div id="bottom-left-small" class="square-small"></div>
+        <div id="bottom-middle-small" class="square-small"></div>
+        <div id="bottom-right-small" class="square-small last-move">O</div>
+    </section> <!-- /END #small-board-4 -->
+    <section id="board-small" class="clearfix">
+        <div id="top-left-small" class="square-small">X</div>
+        <div id="top-middle-small" class="square-small"></div>
+        <div id="top-right-small" class="square-small">O</div>
+
+        <div id="middle-left-small" class="square-small"></div>
+        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-right-small" class="square-small last-move">X</div>
+
+        <div id="bottom-left-small" class="square-small"></div>
+        <div id="bottom-middle-small" class="square-small"></div>
+        <div id="bottom-right-small" class="square-small">O</div>
+    </section> <!-- /END #small-board-5 -->
+    </section>
+  </div> <!-- /END #page -->
+    <footer>
+      <div id="footer-wrapper">
+        <div id="footer-column1">
+          <h3>Learn</h3>
+          <ul>
+            <li>Getting Started</li>
+            <li>Strategy</li>
+            <li>Xs or Os?</li>
+          </ul>
+        </div>
+        <div id="footer-column2">
+          <h3>Company</h3>
+          <ul>
+            <li>About Us</li>
+            <li>Blog</li>
+            <li>Labs</li>
+            <li>Careers</li>
+          </ul>
+        </div>
+        <img src="images/logo_white.png" alt="Tic Tac Toe" />
+        <br class="clearfix">
+        <div id="copyright" class="clearfix">
+          <p>Copyright &copy; 2008&ndash;2012 Tic Tac Toe, Inc. &nbsp; All Rights Reserved. &nbsp; <strong>P.</strong>   815 207 3705 &nbsp;</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+<html>
