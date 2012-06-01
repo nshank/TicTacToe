@@ -12,9 +12,9 @@
       <div id="prototype-nav">
         <span>Prototype Navigation:</span>
         <ul>
-          <li><a href="index.html" class="selected">Page 1</a></li>
+          <li><a href="index.html">Page 1</a></li>
           <li><a href="page2.html">Page 2</a></li>
-          <li><a href="page3.html">Page 3</a></li>
+          <li><a href="page3.html" class="selected">Page 3</a></li>
         </ul>
       </div>
 
@@ -31,41 +31,41 @@
       <div id="player-select">
       <h2>Player(s)</h2>
       <ul>
-        <li><a href="#" class="selected">1 Player</a></li>
-        <li><a href="#" class="disabled">2 Players</a></li>
+        <li><a href="#">1 Player</a></li>
+        <li><a href="#">2 Players</a></li>
       </ul>
     </div> <!-- /END #player-select -->
     <div id="difficulty-select">
       <h2>Difficulty</h2>
       <ul>
-        <li><a href="#" class="selected">Easy</a></li>
-        <li><a href="#" class="disabled">Medium</a></li>
-        <li><a href="#" class="disabled">Unbeatable</a></li>
+        <li><a href="#">Easy</a></li>
+        <li><a href="#">Medium</a></li>
+        <li><a href="#">Unbeatable</a></li>
       </ul>
-    </div><!-- /END #difficulty-select -->
-    <div id="game-mode">
+    </div> <!-- /END #difficulty-select -->
+    <!-- <div id="game-mode">
       <ul>
-        <!-- <li><a href="#" class="selected">Play</a></li>
+        <li><a href="#" class="selected">Play</a></li>
         <li><a href="#">Play Again</a></li>
-        <li><a href="#">New Game</a></li> -->
+        <li><a href="#">New Game</a></li>
       </ul>
-    </div> <!-- /END #game-mode -->
+    </div> --> <!-- /END #game-mode -->
     </div> <!-- /END #settings-wrapper -->
     </section>
     <div id="page">
-      <div id="message">Player O's turn to move</div>
+    <div id="message">New Game</div>
     <section id="board" class="clearfix">
-        <div id="top-left" class="square">X</div>
+        <div id="top-left" class="square"></div>
         <div id="top-middle" class="square"></div>
-        <div id="top-right" class="square">O</div>
+        <div id="top-right" class="square"></div>
 
         <div id="middle-left" class="square"></div>
-        <div id="middle-middle" class="square">X</div>
-        <div id="middle-right" class="square">X</div>
+        <div id="middle-middle" class="square"></div>
+        <div id="middle-right" class="square"></div>
 
         <div id="bottom-left" class="square"></div>
         <div id="bottom-middle" class="square"></div>
-        <div id="bottom-right" class="square">O</div>
+        <div id="bottom-right" class="square"></div>
     </section> <!-- /END #board -->
     <section id="history">
       <h2>Move History</h2>
@@ -75,7 +75,7 @@
         <div id="top-right-small" class="square-small"></div>
 
         <div id="middle-left-small" class="square-small"></div>
-        <div id="middle-middle-small" class="square-small last-move">X</div>
+        <div id="middle-middle-small" class="square-small"></div>
         <div id="middle-right-small" class="square-small"></div>
 
         <div id="bottom-left-small" class="square-small"></div>
@@ -85,10 +85,10 @@
     <section id="board-small" class="clearfix">
         <div id="top-left-small" class="square-small"></div>
         <div id="top-middle-small" class="square-small"></div>
-        <div id="top-right-small" class="square-small last-move">O</div>
+        <div id="top-right-small" class="square-small"></div>
 
         <div id="middle-left-small" class="square-small"></div>
-        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-middle-small" class="square-small"></div>
         <div id="middle-right-small" class="square-small"></div>
 
         <div id="bottom-left-small" class="square-small"></div>
@@ -96,12 +96,12 @@
         <div id="bottom-right-small" class="square-small"></div>
     </section> <!-- /END #small-board-2 -->
     <section id="board-small" class="clearfix">
-        <div id="top-left-small" class="square-small last-move">X</div>
+        <div id="top-left-small" class="square-small"></div>
         <div id="top-middle-small" class="square-small"></div>
-        <div id="top-right-small" class="square-small">O</div>
+        <div id="top-right-small" class="square-small"></div>
 
         <div id="middle-left-small" class="square-small"></div>
-        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-middle-small" class="square-small"></div>
         <div id="middle-right-small" class="square-small"></div>
 
         <div id="bottom-left-small" class="square-small"></div>
@@ -109,30 +109,30 @@
         <div id="bottom-right-small" class="square-small"></div>
     </section> <!-- /END #small-board-3 -->
     <section id="board-small" class="clearfix">
-        <div id="top-left-small" class="square-small">X</div>
+        <div id="top-left-small" class="square-small"></div>
         <div id="top-middle-small" class="square-small"></div>
-        <div id="top-right-small" class="square-small">O</div>
+        <div id="top-right-small" class="square-small"></div>
 
         <div id="middle-left-small" class="square-small"></div>
-        <div id="middle-middle-small" class="square-small">X</div>
+        <div id="middle-middle-small" class="square-small"></div>
         <div id="middle-right-small" class="square-small"></div>
 
         <div id="bottom-left-small" class="square-small"></div>
         <div id="bottom-middle-small" class="square-small"></div>
-        <div id="bottom-right-small" class="square-small last-move">O</div>
+        <div id="bottom-right-small" class="square-small"></div>
     </section> <!-- /END #small-board-4 -->
     <section id="board-small" class="clearfix">
-        <div id="top-left-small" class="square-small">X</div>
+        <div id="top-left-small" class="square-small"></div>
         <div id="top-middle-small" class="square-small"></div>
-        <div id="top-right-small" class="square-small">O</div>
+        <div id="top-right-small" class="square-small"></div>
 
         <div id="middle-left-small" class="square-small"></div>
-        <div id="middle-middle-small" class="square-small">X</div>
-        <div id="middle-right-small" class="square-small last-move">X</div>
+        <div id="middle-middle-small" class="square-small"></div>
+        <div id="middle-right-small" class="square-small"></div>
 
         <div id="bottom-left-small" class="square-small"></div>
         <div id="bottom-middle-small" class="square-small"></div>
-        <div id="bottom-right-small" class="square-small">O</div>
+        <div id="bottom-right-small" class="square-small"></div>
     </section> <!-- /END #small-board-5 -->
     <section id="board-small" class="clearfix">
         <div id="top-left-small" class="square-small"></div>
@@ -186,7 +186,7 @@
         <div id="bottom-middle-small" class="square-small"></div>
         <div id="bottom-right-small" class="square-small"></div>
     </section> <!-- /END #small-board-9 -->
-    </section>
+    </section> <!-- /END #history -->
   </div> <!-- /END #page -->
     <footer>
       <div id="footer-wrapper">

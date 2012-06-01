@@ -21,6 +21,35 @@ h3 {
     color:#FFF;
 }
 
+div#prototype-nav-wrapper {
+    height:30px;
+    background:#000;
+}
+
+div#prototype-nav {
+    margin:0 auto;
+    width:960px;
+}
+
+div#prototype-nav span {
+    color:#FFF;
+    float:left;
+    padding:6px;
+}
+
+div#prototype-nav ul li {
+    float:left;
+    padding:6px;
+}
+
+div#prototype-nav ul li a {
+    color:#CCC;
+}
+
+div#prototype-nav ul li a:hover, div#prototype-nav ul li a.selected {
+    color:#FFF;
+}
+
 header {
     height:100px;
     background:#FFF;
@@ -69,7 +98,7 @@ header span {
 }
 
 section#settings {
-    height:160px;
+    margin:0 0 120px 0;
 }
 
 div#settings-wrapper {
@@ -82,12 +111,13 @@ div#player-select, div#difficulty-select {
     float:left;
 }
 
-section#settings ul li, section#game-mode ul li {
+section#settings ul li {
     display:block;
     float:left;
+    padding-left:2px;
 }
 
-section#settings ul li a, section#game-mode ul li a {
+section#settings ul li a {
     padding:10px 20px;
     text-decoration:none;
     color:#5F646B;
@@ -107,16 +137,25 @@ section#settings ul li a:hover, section#settings ul li a.selected, section#game-
     text-shadow: 1px 1px 0 rgba(0,0,0, 0.3);
 }
 
+section#settings ul li a.disabled, section#game-mode ul li a.disabled 
+section#settings ul li a:hover.disabled, section#game-mode ul li a:hover.disabled {
+    color:#999;
+    background:#CCC;
+    text-shadow: 1px 1px 0 rgba(0,0,0, 0.0);
+    cursor: default;
+    border:1px solid #BBB;
+}
+
 
 div#page {
     width:960px;
     margin:0 auto;
 }
 
-section#game-mode {
+div#game-mode {
     float:left;
     width:960px;
-    margin-bottom:40px;
+    margin:40px 0;
 }
 
 section#board {
@@ -129,6 +168,15 @@ section#board {
     -ms-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
     -o-box-shadow: 0 1px 5px rgba(0,0,0,0.2);
     box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+div#message {
+    width:466px;
+    margin:0 0 10px 0;
+    padding:0 0 6px 0;
+    font-size:20px;
+    color:#5F646B;
+    border-bottom:1px dotted #CCC;
 }
 
 div.square {
